@@ -126,3 +126,45 @@ gpgconf --launch gpg-agent
 - E o agente irá rodar!
 
 - Dessa forma ele não irá ficar pedindo a senha toda hora!
+
+
+---
+
+### alterar chave e adicionar mais e-mails
+
+- Executar o seguinte comando:
+
+```shell
+gpg --edit-key CHAVE_AQUI
+```
+
+- e na sequencia executar o comando:
+
+```shell
+adduid
+```
+
+- Será solicitado o `Real Name`
+- Solicitado o `email` e `Comments`
+
+- Selecionar o uid desejado caso seja o segundo executar o comando:
+
+```shell
+uid 2
+```
+
+- Isso colocará ele como padrão
+
+- Para confiar nele executar o comando:
+
+```shell
+trust
+```
+
+- E colocar o quanto confia, o `5` significa que super confia
+
+- E por fim executar o comando:
+
+```shell
+save
+```
