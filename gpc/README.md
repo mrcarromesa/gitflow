@@ -63,7 +63,7 @@ gpg --armor --export ID_DA_CHAVE_AQUI
 - Precisamos fazer mais uma coisa antes de prosseguir, com o id da chave vamos configurar o nosso git config utilizando esse comando:
 
 ```shell
-git config --global user.signigkey ID_DA_CHAVE
+git config --global user.signingkey ID_DA_CHAVE
 ```
 
 - No arquivo ~/.zshrc adicionar o seguinte:
@@ -126,4 +126,3 @@ gpgconf --launch gpg-agent
 - E o agente irá rodar!
 
 - Dessa forma ele não irá ficar pedindo a senha toda hora!
-
